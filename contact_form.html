@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <link rel="stylesheet" href="formStyle.css" type="text/css" media="all" />
+        </head>
+        <body>
+                <div class="topnav">
+                        <a class="active"  href="cuacaUpdate.php">Home</a>
+                </div>
+                <h2>Contact Us</h2>
+
+                <form class="form" action="contactForm.php" method="POST">
+
+                        <p class="username">
+                                <input type="text" name="name" id="name" placeholder="Enter your name" >
+                                <label for="name">Name</label>
+                        </p>
+
+                        <p class="useremail">
+                                <input type="text" name="email" id="email" placeholder="mail@example.com" >
+                                <label for="email">Email</label>
+                        </p>
+
+                        <p class="usercontact">
+                                <input type="text" name="contact" id="contact" placeholder="contact no." >
+                                <label for="contact">Phone number</label>
+                        </p>
+
+                        <p class="usertext">
+                                <textarea name="text" placeholder="Write something to us" ></textarea>
+                                <label for="text">Comments</label>
+                        </p>
+
+                        <p class="usersubmit">
+                                <input type="submit" name="submit" value="Send" >
+                        </p>
+                </form>
+
+                <button class="view-ticket-button" onclick="viewTicket()">View Ticket</button>
+
+                <script>
+                        // Function to handle the view ticket button click
+                        function viewTicket() {
+                                // Show a confirmation message before navigating
+                                var confirmation = confirm("Are you sure you want to view your ticket?");
+
+                                if (confirmation) {
+                                        // Replace "ticket.html" with the actual URL or path of the ticket page
+                                        window.location.href = "readTicket.php";
+                                }
+                        }
+                </script>
+                <script>
+                        // Check if the URL contains a success message
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const successMessage = urlParams.get('success');
+
+                        // If success message exists, show the popup
+                        if (successMessage) {
+                                alert("Thank you! We will get in touch with you soon");
+                        }
+                </script>
+        </body>
+</html>

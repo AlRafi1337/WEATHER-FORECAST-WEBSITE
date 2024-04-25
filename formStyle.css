@@ -1,0 +1,101 @@
+body {
+        border: 0;
+        margin: 10px;
+        padding: 5%;
+        font-size: 13px;
+        flex-wrap: wrap;    
+        background-image: url("https://images.unsplash.com/photo-1528458909336-e7a0adfed0a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWVzdGhldGljJTIwbmV3c3BhcGVyJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60");
+        background-size: cover;
+        background-position: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+        background-color: #ddd;
+        color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+        background-color: #AB0341;
+        color: white;
+}
+
+h2 {
+        margin-bottom: 20px;
+        font-family: fantasy;
+    font-size: 40px;
+}
+
+
+
+input, textarea {
+        padding: 10px;
+        border: 1px solid #E5E5E5;
+        width: 200px;
+        color: #999999;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+
+}
+
+textarea {
+        width: 200px;
+        height: 150px;
+        max-width: 400px;
+        line-height: 18px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+        border-color: 1px solid #C9C9C9;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;  
+}
+
+.form label {
+        margin-left: 10px;
+        font-family:monospace;
+    font-size: 15px;
+}
+
+
+.usersubmit input {
+        width: 100px; 
+        height: 40px;
+        background-color: #474E69; 
+        color: #FFF;
+        border-radius: 3px;
+    
+}
+
+.usersubmit input, .view-ticket-button {
+        width: 100px;
+        height: 40px;
+        border-radius: 3px;
+}
+
+.usersubmit input {
+        background-color: #474E69;
+        color: #FFF;
+}
+
+.view-ticket-button {
+        background-color: #AB0341;
+        color: #FFF;
+        margin-left: 10px;
+}
+
+
+
+
+
+
